@@ -18,5 +18,10 @@
             "email": "info@area-net.de"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "scripts": {
+        "post-install-cmd": [
+            "Contentfly\\Install::init"
+        ]    
+    }
 }
