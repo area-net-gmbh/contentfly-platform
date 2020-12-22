@@ -3,13 +3,10 @@
     "description": "Contentfly CMS 2",
     "type": "library",
     "autoload": {
-        "psr-4": {"Contentfly\\": "backend/"}
+        "psr-4": {"Contentfly\\": "core/"}
     },
     "require": {
         "symfony/symfony": "^5.2"
-    },
-    "archive": {
-        "exclude": ["/frontend"]
     },
     "license": "MIT",
     "authors": [
@@ -18,10 +15,5 @@
             "email": "info@area-net.de"
         }
     ],
-    "minimum-stability": "dev",
-    "scripts": {
-        "post-install-cmd": [
-            "Contentfly\\Install::init"
-        ]    
-    }
+    "minimum-stability": "dev"
 }
